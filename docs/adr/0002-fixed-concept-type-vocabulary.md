@@ -1,0 +1,3 @@
+# Fixed 15-value concept type vocabulary
+
+Every OKF concept's `type` comes from a fixed vocabulary of fifteen values — six structural (Domain, Shared Kernel, Realm, Sandbox, Tool, Code Request) and nine DDD/hexagonal building blocks (Entity, Value Object, Event, Event Listener, Event Emitter, Port, Adapter, Application, Nix Flake) — derived from the codebase's base classes and enums. The three classifier enums (PescioSpace, ArchitecturalRole, HexagonalLayer) are recorded as tags, not types. We chose a fixed small vocabulary over free-form types so consumers can route and filter concepts predictably.
